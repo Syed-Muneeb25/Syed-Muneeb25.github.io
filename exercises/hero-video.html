@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+     <!-- Syed Muhammad Muneeb 76239 -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Block with Image</title>
-    <meta name="description" content="A hero block with a background image and a tinted overlay.">
+    <title>Hero Block with Video</title>
+    <meta name="description" content="A hero block with a background video that plays in a continuous loop and includes a tinted overlay.">
 
-    <link rel="preload" href="assests/img/business.jpg" as="image">
+    <link rel="preload" href="assests/videos/hero-still.jpg" as="image">
 
-    <link rel="stylesheet" href="assests/css/hero-image.css">
+    <link rel="stylesheet" href="assests/css/hero-video.css">
 
-</head>
+</head> 
 
+    <h1 class="slide-in-top">Education for Life</h1>
+    <h2 class="slide-in-left">A brighter career and future</h2>
 
 <body>
 
     <!-- hero block -->
     <header>
 
-        <div class="hero-text-container">
-            <h1 class="slide-in-top">Albert Camus</h1>
-            <h2 class="slide-in-left">Creative Web Developer</h2>
-        </div>
-
         <div class="hero-bg-media">
-            <img src="assests/img/business.jpg" alt="sample background image">   
-        </div>
-        
-        <div class="bg-overlay"></div>
+           <video loop playsinline muted autoplay poster="assets/videos/hero-still.jpg" class="background-video" disablepictureinpicture preload="auto"> 
+           <source src="assets/videos/hero-video.mp4" type="video/mp4">
+    </video>
+</div>
         
     </header>
     <!-- /hero block -->
